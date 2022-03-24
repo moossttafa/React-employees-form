@@ -12,7 +12,7 @@ import {
   TableBody,
 } from "@material-ui/core";
 import { Form, Formik } from "formik";
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import * as Yup from "yup";
 import FormControl from "../FormControl/FormControl";
 import DeleteIcon from "@material-ui/icons/Delete";
@@ -118,7 +118,7 @@ const FormContainer = () => {
   };
   const classes = useStyles();
   return (
-    <>
+    <Fragment>
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
@@ -210,17 +210,17 @@ const FormContainer = () => {
                   );
                 })
               ) : (
-                <>
+                <Fragment>
                   <TableRow>
                     <TableCell>No Items</TableCell>
                   </TableRow>
-                </>
+                </Fragment>
               )}
             </TableBody>
           </Table>
         </TableContainer>
       </Paper>
-    </>
+    </Fragment>
   );
 };
 

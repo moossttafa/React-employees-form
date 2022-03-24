@@ -1,0 +1,13 @@
+/* .slideMenu{
+  position: "fixed";
+  min-height: "100vh";
+  width: "300px";
+  top: 0;
+  left: 0;
+  background-color: "#1d223e";
+} 
+@media(max-width: 767px) { 
+  .slideMenu{
+    display: none;
+  }
+} */
